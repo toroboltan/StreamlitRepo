@@ -12,7 +12,7 @@ from deep_translator import GoogleTranslator
 # NLP Pkgs
 from textblob import TextBlob
 import neattext as nt
-import spacy
+import spacy as spc
 
 from collections import Counter
 import re
@@ -44,7 +44,7 @@ def summarize_text(text, num_sentences=3):
 # Lemma and Tokens Function
 def text_analyzer(text):
     # import English library
-    nlp = spacy.load('en_core_web_sm')
+    nlp = spc.load('en_core_web_sm')
     # create an nlp object
     doc = nlp(text)
     #extract tokens and lemmas
