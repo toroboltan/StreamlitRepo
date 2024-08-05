@@ -12,7 +12,7 @@ from deep_translator import GoogleTranslator
 # NLP Pkgs
 from textblob import TextBlob
 import neattext as nt
-import spacy as spc
+#import spacy as spc
 
 from collections import Counter
 import re
