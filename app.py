@@ -44,11 +44,12 @@ def summarize_text(text, num_sentences=3):
 # Lemma and Tokens Function
 def text_analyzer(text):
     # import English library
-    nlp = spc.load('en_core_web_sm')
+    #nlp = spc.load('en_core_web_sm')
     # create an nlp object
-    doc = nlp(text)
+    #doc = nlp(text)
     #extract tokens and lemmas
-    allData = [('"Token":{},\n"Lemma":{}'.format(token.text, token.lemma_)) for token in doc]
+    #allData = [('"Token":{},\n"Lemma":{}'.format(token.text, token.lemma_)) for token in doc]
+    allData = 'Hola para ver si pasa'
     return allData
 
 
